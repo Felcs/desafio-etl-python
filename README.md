@@ -1,18 +1,18 @@
 # Desafio Técnico: Pipeline de Dados com Python
 
-Este projeto implementa um pipeline de ETL (Extração, Transformação e Carga) e análise de dados, desenvolvido como parte de um desafio técnico para a posição de Desenvolvedor Python Pleno.
+Este projeto implementa um pipeline de ETL (Extração, Transformação e Carga) e análise de dados.
 
 O pipeline processa dados históricos de vendas, produtos e clientes, realizando a limpeza, transformação e carga em um ambiente multi-banco (PostgreSQL e MongoDB). Além disso, gera uma série de relatórios analíticos e datasets otimizados.
 
 ## Funcionalidades Implementadas
 
 -   **Pipeline de ETL Robusto:** Processamento de arquivos grandes (`.csv`, `.json`) com uma abordagem de streaming (chunks) para garantir performance e baixo consumo de memória.
--   **Limpeza e Qualidade de Dados:** Validações e correções em tempo de execução, como a verificação de IDs de venda (Item 6) e remoção de duplicatas.
--   **Armazenamento Híbrido:** Os dados são carregados em um banco de dados relacional (PostgreSQL) para análises estruturadas e replicados em um banco NoSQL (MongoDB) (Item 7).
--   **Geração de Indicadores:** Criação de múltiplos relatórios de negócio via queries SQL (Item 2), como produtos mais vendidos, clientes com mais compras, etc.
--   **Análise Avançada:** Identificação do dia da semana de compra preferido para os 20 melhores clientes (Item 3).
--   **Validação de Integridade:** Geração de um relatório de "registros órfãos" para identificar vendas de produtos ou clientes não cadastrados (Item 4).
--   **Saída para Data Lake:** Criação de um dataset otimizado em formato Parquet, particionado por ano e mês para performance em futuras análises (Item 5).
+-   **Limpeza e Qualidade de Dados:** Validações e correções em tempo de execução, como a verificação de IDs de venda e remoção de duplicatas.
+-   **Armazenamento Híbrido:** Os dados são carregados em um banco de dados relacional (PostgreSQL) para análises estruturadas e replicados em um banco NoSQL (MongoDB).
+-   **Geração de Indicadores:** Criação de múltiplos relatórios de negócio via queries SQL, como produtos mais vendidos, clientes com mais compras, etc.
+-   **Análise Avançada:** Identificação do dia da semana de compra preferido para os 20 melhores clientes.
+-   **Validação de Integridade:** Geração de um relatório de "registros órfãos" para identificar vendas de produtos ou clientes não cadastrados.
+-   **Saída para Data Lake:** Criação de um dataset otimizado em formato Parquet, particionado por ano e mês para performance em futuras análises.
 -   **Containerização Completa:** Todo o ambiente é orquestrado com Docker e Docker Compose, garantindo fácil execução e consistência.
 
 ## Tecnologias Utilizadas
@@ -59,7 +59,7 @@ Siga os passos abaixo para executar o pipeline completo em seu ambiente local.
 ### 1. Clonar o Repositório
 
 ```bash
-git clone [URL_DO_SEU_REPOSITORIO]
+git clone [[URL_DO_SEU_REPOSITORIO]](https://github.com/Felcs/desafio-etl-python.git)
 cd [NOME_DA_PASTA_DO_PROJETO]
 ```
 
