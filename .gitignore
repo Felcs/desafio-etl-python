@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+/teste_etl/
+/mongo-data/
+/postgres-data/
+/data/
+/logs/
+
+
 # Distribution / packaging
 .Python
 build/
@@ -77,6 +84,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb
 
 # IPython
 profile_default/
